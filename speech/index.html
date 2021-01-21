@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang='pt-br'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Api de Voz do navegador</title>
+</head>
+<body>
+    <h1>Api de voz do navegador</h1>
+
+    <h2>Fala para texto</h2>
+
+    <button id='gravar'>Falar</button>
+
+    <p>Status: <span id='status-fala'>.</span></p>
+    <p>Resultado: <span id='resultado-fala'></span></p>
+
+    <hr>
+
+    <h2>Texto para fala</h2>
+
+    <input type="text" id='texto'>
+
+    <button id='falar'>Falar</button>
+
+    <script src='speechToText.js'></script>
+    <script src='textToSpeech.js'></script>
+
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Sound Creator</title>
+</head>
+
+<body>
+    <h1>Sound Creator</h1>
+
+    <main hidden>
+        <div>
+            <button id='sweep'>Play Sweep</button>
+
+            <label for='sweepAttack'>Attack</label>
+            <input name='sweepAttack' id='sweepAttack' type='range' min='0' max='1' value='0.2' step='0.1' />
+    
+            <label for='sweepRelease'>Release</label>
+            <input name='sweepRelease' id='sweepRelease' type='range' min='0' max='1' value='0.5' step='0.1' />
+        </div>
+    
+        <div>
+            <button id='pulse'>Play Pulse</button>
+
+            <label for='pulseOsc1hz'>OSC 1 HZ</label>
+            <input name='pulseOsc1hz' id='pulseOsc1hz' type='range' min='660' max='1320' value='880' step='1' />
+    
+            <label for='pulseOsc2hz'>oscillator 2 value</label>
+            <input name='pulseOsc2hz' id='pulseOsc2hz' type='range' min='20' max='40' value='30' step='1' />
+        </div>
+    
+        <div>
+            <button id='noise'>Play Noise</button>
+            
+            <label for='noiseDuration'>Duration</label>
+            <input name='noiseDuration' id='noiseDuration' type='range' min='0.5' max='2' value='1' step='0.1' />
+    
+            <label for='noiseFrequency'>Frequency</label>
+            <input name='noiseFrequency' id='noiseFrequency' type='range' min='100' max='10000' value='500' step='100' />
+        </div>
+    
+        <div>
+            <button id='sample'>Play Sample</button>
+            
+            <label for='sampleSpeed'>Speed</label>
+            <input name='sampleSpeed' id='sampleSpeed' type='range' min='0.5' max='2' value='1' step='0.1' />
+        </div>
+    </main>
+
+    <div id="loading">
+        Loading...
+    </div>
+
+    <script src='./assets/wavetable.js'></script>
+    <script src='./soundCreator.js'></script>
+</body>
+
+</html>

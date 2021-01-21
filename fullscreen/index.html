@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Full screen API</title>
+    <style>
+        main {
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        main div {
+            width: 256px;
+            height: 152px;
+            border: 5px;
+            background-color: #EEE;
+            box-sizing: border-box;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Full Screen</h1>
+
+    <p>Click on element to enter in full screen, press in it again to exit</p>
+
+    <main>
+        <div>
+            <p>Hello there</p>
+        </div>
+
+        <img src='./assets/MinasGerais.gif' width='256' height='142'>
+    
+        <video src='./assets/fundoLegal.mp4' width='256' height='142'></video>
+    
+        <canvas width='256' height='142'></canvas>
+    </main>
+
+    <script src='./script.js'></script>
+</body>
+</html>
